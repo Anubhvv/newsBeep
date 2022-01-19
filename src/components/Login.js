@@ -2,20 +2,19 @@ import React from "react"
 import Feed from "./Feed"
 import ReactDOM from "react-dom"
 
-function verify(){
-    //verified by def
-    ReactDOM.unmountComponentAtNode(<Login />); 
-}
+export default function Login(props){
 
-export default function Login(){
-    return (
+    const loginElement= (
         <div>
             <h1>Login to acccess newsBeep</h1>
-            <form>
+            <div>
                 <input placeholder="email"></input>
                 <input type="password"></input>
-                <button onClick={verify}>login</button>
-            </form>
+                <button onClick={props.handleLoginSubmit}>login</button>
+            </div>
         </div>
     )
+    if(props.showLogin)
+    return loginElement
+    else return(<div></div>)
 }
