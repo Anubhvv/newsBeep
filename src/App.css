@@ -52,3 +52,39 @@
   padding-left: 10px;
 
 }
+
+
+.newsposts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.newscard {
+  flex-basis: 225px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  padding-bottom: 2px;
+  background-color: white;
+}
+
+.newscard > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+.newscard > b {
+  padding : 13px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.newscard > small {
+  align-self: center;
+}
